@@ -37,6 +37,7 @@ Home section Style
     width: 50%;
     margin-top: 110px;
     margin-bottom: 110px;
+
     align-items: center;
 }
 .watch-button{
@@ -51,6 +52,11 @@ Home section Style
     color:#FFFFFF;
     transition: ease-out 0.3s;
     font-weight: 500;
+    
+    
+    /* left: 246px;
+    top: 529px; */
+   
     background: #DD0000;
     border-radius: 5px;
     border: 3px solid rgb(9, 244, 244);
@@ -59,10 +65,10 @@ Home section Style
     position: relative;
     z-index: 1;
 }
-/* button transition */
 .watch-button:hover {
      color: #161616;
-     cursor: pointer;
+    
+    cursor: pointer;
     
 }
 .watch-button:before{
@@ -71,6 +77,7 @@ Home section Style
     top: 0;
     left: 50%;
     right: 50%;
+   
     bottom: 0;
     opacity: 0;
     content: "";
@@ -80,11 +87,11 @@ Home section Style
     transition: 0.5s all ease;
     left: 0;
     right:0;
+   
     opacity: 1;
     z-index: -1;
 
 }
-/* Home page style */
 
 .home-picture{
     width: 40%;
@@ -100,8 +107,7 @@ Home section Style
    
     
 }
-
-/* Blog Section  style*/
+/* Blog Section */
 .blog-section{
     margin: 3.15% 8.8% 8% 8.8% ;
 }
@@ -109,6 +115,7 @@ Home section Style
     display: grid;
     grid-template-columns: 0.25fr 1fr;
     grid-column-gap: 24px;
+    justify-items: center;
     
     
 
@@ -117,6 +124,8 @@ Home section Style
 .blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin: 0%;
     
     color:#161616;
     grid-column-gap: 24px;
@@ -129,28 +138,46 @@ Home section Style
 }
 .information{
     width: 312px;
+    
     height: 312px;
     background-color:#161616 ;
     width: 100%;
     border-radius: 10px;
     
 }
+.blog-banner{
+    display: flex;
+    justify-content: space-between;
+}
+.blog-banner .match {
+    width: 30%;
+}
+.blog-banner img{
+    width: 64.04px;
+    height: 56.18px;
+}
+.vs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .blog{
-    width: 220px;
-    height: 376px;
+    width: 240px;
+    height: 350px;
     border-radius: 5px ;
    
     border: 0.3px groove rgba(0, 0, 0, 0.05);
     box-shadow: (0px 5.34229px 13.3557px rgba(50, 47, 47, 0.595));
-    padding-left: 9px;
+   
+    padding: 0px 20px 20px 20px;
 }
     
 
-.blog .blog-banner img{
+/* .blog .blog-banner img{
     width: 220px;
     height: 175px;
     
-}
+} */
 .info-button {
     
    display: grid;
@@ -171,7 +198,6 @@ Home section Style
     
 
 }
-/* Common Button */
 #button-1{
     border-radius: 6px;
 
@@ -181,7 +207,6 @@ Home section Style
 
 }
 
-/* selected button */
 #button-3{
     background-color: #DD0000;
     color:#FFFFFF;
@@ -191,7 +216,8 @@ Home section Style
 }
 .blog-time{
     display: flex;
-    
+    /* justify-content: space-evenly;
+    align-items: center; */
     
     
 }
@@ -204,7 +230,9 @@ Home section Style
 .hidden-button{
     display: none;
     margin: 3.15% 8.8% 8% 8.8% ;
-    
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 .hidden-button button{
     width: 131px;
@@ -274,6 +302,9 @@ Home section Style
         overflow: hidden;
         text-overflow: ellipsis;
         height: 48px;
+        /* width: 258px;
+        
+        font-weight: 400; */
         font-size: 14px;
         line-height: 24px;
 
@@ -303,6 +334,7 @@ Home section Style
    .blog{
     width: 90%;
    }
+   
    .blog .blog-banner img{
     width: 100%;
    }
@@ -326,6 +358,7 @@ Home section Style
     
     justify-items: center;
     
+    /* margin: 3.15% 2.8% 8% 8.8% ; */
     
     background-color: #FFFFFF;
 }
@@ -356,7 +389,7 @@ Home section Style
 }
 
 }
-/*  style for tablet */
+/* for tablet */
 @media only screen and (min-width:689px) and (max-width:992px){
     .home-heading{
         font-weight: 700;
@@ -374,6 +407,9 @@ Home section Style
         width: 80%;
        
         grid-template-columns: repeat(3,1fr);
+        /* justify-content: center;
+        justify-items: center;
+        align-items: center; */
         
         width: 100%;
         height: 120px;
@@ -398,6 +434,7 @@ Home section Style
         width: 100%;
        }
        .hidden-button{
+        /* display: none; */
         margin: 3.15% 8.8% 8% 8.8% ;
         display: flex;
         justify-content: center;
@@ -413,7 +450,6 @@ Home section Style
         width: 200px;
     
     }
-    /* for social media icon */
     .option-1 { grid-area: footer1; }
     .option-2 { grid-area: footer2; }
     .option-3 { grid-area: footer3; }

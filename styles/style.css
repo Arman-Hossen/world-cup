@@ -45,6 +45,7 @@ Home section Style
     padding: 16px 25px;
     gap: 10px;
     color:#FFFFFF;
+    font-weight: 500;
     width: 187px;
     height: 56px;
     left: 246px;
@@ -98,7 +99,7 @@ Home section Style
     
 }
 .blog{
-    width: 267px;
+    width: 220px;
     height: 376px;
     border-radius: 5px ;
    
@@ -109,7 +110,7 @@ Home section Style
     
 
 .blog .blog-banner img{
-    width: 267px;
+    width: 220px;
     height: 175px;
     
 }

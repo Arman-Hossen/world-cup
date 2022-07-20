@@ -274,7 +274,7 @@ Home section Style
     width: 90%;
    }
    .blog .blog-banner img{
-    width: 90%;
+    width: 100%;
    }
    .home-picture{
     width: 233px;
@@ -377,6 +377,44 @@ Home section Style
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    .f-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer hr{
+        width: 200px;
+    
+    }
+    .option-1 { grid-area: footer1; }
+    .option-2 { grid-area: footer2; }
+    .option-3 { grid-area: footer3; }
+    .option-4 { grid-area: footer4; }
+    .option-5 { grid-area: footer5; }
+    .option-6 { grid-area: footer6; }
+
+    .f-terms{
+        display: grid;
+       
+        grid-template-areas:'footer1 footer2 footer3 footer4'
+                             
+        'footer5 footer5 footer6 footer6';
+        
+       
+        
+        padding:5px;
+        width: 635px;
+        height: 100px;
+    }
+    .social-icon{
+        
+       font-size: 25px;
+       gap: 35px;
+        padding-right: 0px;
+        padding-left: 0px;
+    
     }
        
     

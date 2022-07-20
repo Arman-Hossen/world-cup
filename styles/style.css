@@ -41,21 +41,59 @@ Home section Style
     align-items: center;
 }
 .watch-button{
+    width: 187px;
+    height: 56px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     padding: 16px 25px;
     gap: 10px;
+    border:none;
     color:#FFFFFF;
+    transition: ease-out 0.3s;
     font-weight: 500;
-    width: 187px;
-    height: 56px;
-    left: 246px;
-    top: 529px;
-    font-size: 1.1em;
+    
+    
+    /* left: 246px;
+    top: 529px; */
+   
     background: #DD0000;
     border-radius: 5px;
+    border: 3px solid rgb(9, 244, 244);
+    
+    font-size: 1.1rem;
+    position: relative;
+    z-index: 1;
 }
+.watch-button:hover {
+     color: #161616;
+    
+    cursor: pointer;
+    
+}
+.watch-button:before{
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+   
+    bottom: 0;
+    opacity: 0;
+    content: "";
+    background-color:rgb(9, 244, 244);;
+}
+.watch-button:hover:before{
+    transition: 0.5s all ease;
+    left: 0;
+    right:0;
+   
+    opacity: 1;
+    z-index: -1;
+
+}
+
+
 .home-picture{
     width: 40%;
     margin-top: 5%;
@@ -70,6 +108,7 @@ Home section Style
    
     
 }
+
 /* Blog Section */
 .blog-section{
     margin: 3.15% 8.8% 8% 8.8% ;

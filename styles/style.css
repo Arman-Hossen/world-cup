@@ -14,6 +14,9 @@ Home section Style
 .home{
     margin: 3.15% 8.8% 8% 8.8% ;
 }
+/* ----------------
+home section container
+-------------------- */
 .home-container{
     
     display: flex;
@@ -39,6 +42,9 @@ Home section Style
     margin-bottom: 110px;
     align-items: center;
 }
+/*-----------------
+ animated button 
+ ----------------- */
 .watch-button{
     width: 187px;
     height: 56px;
@@ -54,7 +60,6 @@ Home section Style
     background: #DD0000;
     border-radius: 5px;
     border: 3px solid rgb(9, 244, 244);
-    
     font-size: 1.1rem;
     position: relative;
     z-index: 1;
@@ -92,7 +97,10 @@ Home section Style
     margin-bottom: 0;
     margin-left: 1%;
 
-}
+} 
+/* =================
+home page image
+================== */
 .home-picture img{
     margin-left: 1%;
     width: 100%;
@@ -114,6 +122,7 @@ Home section Style
 
 
 }
+/* bogs div style */
 .blogs{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -123,6 +132,7 @@ Home section Style
     grid-row-gap: 24px;
     
 }
+/* common section button */
 .info-button a{
     text-decoration: none;
     color: #161616;
@@ -135,6 +145,7 @@ Home section Style
     border-radius: 10px;
     
 }
+/* world cup blog div style */
 .blog{
     width: 220px;
     height: 376px;
@@ -151,6 +162,7 @@ Home section Style
     height: 175px;
     
 }
+/* common section button more style */
 .info-button {
     
    display: grid;
@@ -238,6 +250,7 @@ Home section Style
     align-items: center;
     padding: 5px 100px 5px 100px;
 }
+/* scoal media icons */
 .social-icon{
     display: flex;
     justify-content: space-around;
@@ -256,6 +269,7 @@ Home section Style
     *{
         margin: 0%;
     }
+    /* home opage sizing for mobile */
     .home-container{
         
         flex-direction: column;
@@ -278,6 +292,7 @@ Home section Style
         line-height: 24px;
 
     }
+    /* amimated button resizing */
     .watch-button{
         width: 161px;
         height: 40px;
@@ -285,6 +300,7 @@ Home section Style
         padding: 5px 25px;
         font-size: 16px;
     }
+    /* blogs section for mobile */
    .my-blogs{
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 1fr , 1fr;
@@ -329,6 +345,8 @@ Home section Style
     
     background-color: #FFFFFF;
 }
+/* =========================
+==================footer section style for mobile ======================*/
 
 .f-container{
     display: flex;
@@ -356,7 +374,8 @@ Home section Style
 }
 
 }
-/*  style for tablet */
+/* ===========================
+ style for tablet ==========*/
 @media only screen and (min-width:689px) and (max-width:992px){
     .home-heading{
         font-weight: 700;
